@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Portfolio - About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, #2c3e50, #16a085, #8e44ad, #00b894, #fd79a8);
+            background-size: 300% 300%;
+            animation: gradientMove 10s infinite alternate;
+            z-index: -1;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar {
+            z-index: 10;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            background: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            animation: dimUndim 5s infinite;
+        }
+
+        @keyframes dimUndim {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+
+        p {
+            max-width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Thanh Truong Doan - Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <img src="images/photo.jpg" alt="Your Profile Photo" class="profile-pic">
+        <h2 class="mt-3">WELCOME TO MY PORTFOLIO</h2>
+        <h2 class="mt-3">Hello. I'm Thanh Truong Doan</h2>
+        <p>
+            I am a dedicated and detail-oriented professional with over a decade of experience as a slot technician, including four years as a senior technician leading projects and coordinating operations. Currently pursuing a Software Development diploma at Mohawk College with a 94% overall grade and multiple Dean's Honour distinctions, I have developed strong programming skills in Python, Java, and C#, along with expertise in web development and database management. My background in troubleshooting, system upgrades, and regulatory compliance translates well into software development, demonstrating a methodical approach to problem-solving. Fluent in English and Vietnamese, I excel in teamwork, leadership, and technical communication, making me a valuable asset in both technical and development roles.
+        </p>
+    </div>
+
+    <footer class="footer">
+        &copy; 2025 Thanh Truong Doan - Portfolio | Designed for Assignment
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
